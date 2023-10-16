@@ -14,7 +14,8 @@ public enum Router: URLRequestConvertible {
     case getSpecificTickerInfo(parameters: Parameters)
     
     var baseURL: URL {
-        guard let url = URL(string: "https://www.bitexen.com") else { fatalError("Failed to create URL.")
+        guard let url = URL(string: "https://www.bitexen.com") else {
+            fatalError("Failed to create URL.")
         }
         return url
     }
@@ -39,7 +40,7 @@ public enum Router: URLRequestConvertible {
         switch self {
         case .marketInfos:
             return [:]
-        case .getSpecificTickerInfo:
+        case .getSpecificTickerInfo(let parameters):
             return parameters
         }
     }

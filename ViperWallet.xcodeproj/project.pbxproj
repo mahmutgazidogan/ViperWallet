@@ -16,6 +16,8 @@
 		C0BA9BB02ADDBFDD00A7162A /* NetworkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BA9BAF2ADDBFDD00A7162A /* NetworkingManager.swift */; };
 		C0BA9BB32ADDC30700A7162A /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = C0BA9BB22ADDC30700A7162A /* Alamofire */; };
 		C0BA9BB62ADDC56500A7162A /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BA9BB52ADDC56500A7162A /* Router.swift */; };
+		C0BA9BB92ADDD2E700A7162A /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = C0BA9BB82ADDD2E700A7162A /* SnapKit */; };
+		C0BA9BBC2ADDD35A00A7162A /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BA9BBB2ADDD35A00A7162A /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,7 @@
 		C0BA9BAC2ADDBD3F00A7162A /* HomeEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeEntity.swift; sourceTree = "<group>"; };
 		C0BA9BAF2ADDBFDD00A7162A /* NetworkingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingManager.swift; sourceTree = "<group>"; };
 		C0BA9BB52ADDC56500A7162A /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		C0BA9BBB2ADDD35A00A7162A /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +40,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C0BA9BB32ADDC30700A7162A /* Alamofire in Frameworks */,
+				C0BA9BB92ADDD2E700A7162A /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +67,7 @@
 			isa = PBXGroup;
 			children = (
 				C067BBC12ADC3E26004FE458 /* Supporting Files */,
+				C0BA9BBA2ADDD34100A7162A /* Extensions */,
 				C067BBC02ADC3E1B004FE458 /* Screens */,
 				C067BBBA2ADC3D51004FE458 /* Info.plist */,
 			);
@@ -131,6 +136,14 @@
 			path = Networking;
 			sourceTree = "<group>";
 		};
+		C0BA9BBA2ADDD34100A7162A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C0BA9BBB2ADDD35A00A7162A /* Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -149,6 +162,7 @@
 			name = ViperWallet;
 			packageProductDependencies = (
 				C0BA9BB22ADDC30700A7162A /* Alamofire */,
+				C0BA9BB82ADDD2E700A7162A /* SnapKit */,
 			);
 			productName = ViperWallet;
 			productReference = C067BBA92ADC3D49004FE458 /* ViperWallet.app */;
@@ -180,6 +194,7 @@
 			mainGroup = C067BBA02ADC3D49004FE458;
 			packageReferences = (
 				C0BA9BB12ADDC30700A7162A /* XCRemoteSwiftPackageReference "Alamofire" */,
+				C0BA9BB72ADDD2E700A7162A /* XCRemoteSwiftPackageReference "SnapKit" */,
 			);
 			productRefGroup = C067BBAA2ADC3D49004FE458 /* Products */;
 			projectDirPath = "";
@@ -208,6 +223,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C067BBAD2ADC3D49004FE458 /* AppDelegate.swift in Sources */,
+				C0BA9BBC2ADDD35A00A7162A /* Extensions.swift in Sources */,
 				C0BA9BAD2ADDBD3F00A7162A /* HomeEntity.swift in Sources */,
 				C067BBAF2ADC3D49004FE458 /* SceneDelegate.swift in Sources */,
 				C0BA9BB02ADDBFDD00A7162A /* NetworkingManager.swift in Sources */,
@@ -432,6 +448,14 @@
 				kind = branch;
 			};
 		};
+		C0BA9BB72ADDD2E700A7162A /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				branch = develop;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -439,6 +463,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = C0BA9BB12ADDC30700A7162A /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
+		};
+		C0BA9BB82ADDD2E700A7162A /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C0BA9BB72ADDD2E700A7162A /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
